@@ -1,0 +1,53 @@
+{
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.unicodeHighlight.allowedLocales": {
+        "zh-hans": true
+    },
+    "editor.minimap.size": "fill",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Default Light+",
+    
+    "cmake.configureOnOpen": true,
+    "debug.onTaskErrors": "showErrors",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.openRepositoryInParentFolders": "never",
+    "git.enableSmartCommit": true,
+    "git-graph.commitDetailsView.fileView.type": "File List",
+    "git-graph.commitDetailsView.location": "Docked to Bottom",
+    "git-graph.customBranchGlobPatterns": [
+
+    ],
+    "remote.otherPortsAttributes": {
+        "onAutoForward": "notify"
+    },
+    "audioCues.chatRequestSent": "auto",
+    "git.allowNoVerifyCommit": true,
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.alwaysSignOff": true,
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editorLargeFileConfirmation": 102400,
+    "git.autofetch": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "cmake.showOptionsMovedNotification": false,
+    "workbench.editorAssociations": {
+        "*.bin": "hexEditor.hexedit"
+    },
+    //鼠标滑动改变字体大小
+   "editor.mouseWheelZoom": true,
+   //改变左侧界面字体
+    "window.zoomLevel": 0.8,
+    "editor.fontSize": 12,
+    "workbench.settings.applyToAllProfiles": [
+    
+    
+    ],
+    "editor.fontVariations": false,
+    "git-graph.contextMenuActionsVisibility": {
+        "commit": {}
+    },
+    "files.autoSave": "afterDelay",
+    "editor.minimap.renderCharacters": false,
+    "extensions.ignoreRecommendations": true
+}

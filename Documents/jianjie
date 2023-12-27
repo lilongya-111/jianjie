@@ -1,0 +1,195 @@
+
+[user]
+	name = lilongya-111
+	email = 1051532926@qq.com
+[init]
+	defautBranch = master
+[http]
+	postBuffer = 52428800
+[core]
+	excludesfile = /home/lly/.gitignore
+
+
+
+uname -r                   				查看内核版本
+sudo passwd root	   				重新设置root密码    
+lsb_release -a  					查看系统版本
+poweroff 						关机
+sudo apt remove+packagename --purge           	       删除包，包括配置文件等
+ps -aux 					       查看内存占用情况
+sudo find /  -iname "*libGL.so*"	全局查找文件
+
+ffplay -f v4l2 -input_format bayer_bggr16le -video_size 4608x3456 -i /dev/video0	调用摄像头
+
+
+python -m pysimplegui-exemaker.pysimplegui-exemaker	打开python打包工具
+
+https://box.lenovo.com/l/O0Hj3W
+
+hexdump boot.bin -C	查看2进制文件
+qemu ~/git/all/nasm/ma.img -S -s
+gdb	target remote 192.168.31.241:1234
+disas 0x7c00,+100	反汇编
+ndsasm boot.bin	查看2进制文件反汇编代码
+set disassembly-flavor intel	设置成intel格式反汇编
+
+
+sudo afw status	查看防火墙状态
+
+git配置************************************************************************************************
+********************************************************************************************************
+***********************************************************************************************************
+git config --global user.name "lilongya-111"    &&						
+git config --global user.email 	"1051532926@qq.com"  &&
+ssh-keygen -t rsa -C "1051532926@qq.com"  &&
+cd ~/.ssh/ &&
+cat id_rsa.pub
+#手动设置github    ssh key
+ssh -T git@github.com &&
+git remote rm origin &&
+git remote add origin git@github.com:lilongya-111/all.git &&
+git init &&
+echo "Downloads/" >> .gitignore && 
+git rm --cached Downloads/ -r &&
+echo "Pictures/" >> .gitignore && 
+git rm --cached Pictures/ -r	&&
+echo "Videos/" >> .gitignore && 
+git rm --cached Videos/ -r	&&
+echo "Music/" >> .gitignore && 
+git rm --cached Music/ -r	&&
+echo ".local/" >> .gitignore && 
+git rm --cached .local/ -r	&&
+echo ".config/" >> .gitignore && 
+git rm --cached .config/ -r	&&
+echo ".sogouinput/" >> .gitignore && 
+git rm --cached .sogouinput/ -r	&&
+echo ".gitconfig/" >> .gitignore && 
+git rm --cached .gitconfig/ -r	&&
+echo ".viminfo/" >> .gitignore && 
+git rm --cached .viminfo/ -r	&&
+echo ".vscode/" >> .gitignore && 
+git rm --cached .vscode/ -r	&&
+echo "snap/" >> .gitignore && 
+git rm --cached snap/ -r	&&
+echo ".zcompdump" >> .gitignore && 
+git rm --cached .zcompdump -r	&&
+echo ".gitignore" >> .gitignore && 
+git rm --cached .gitignore -r	&&
+echo ".dbus" >> .gitignore && 
+git rm --cached .dbus -r	&&
+echo ".ssh/" >> .gitignore && 
+git rm --cached .ssh/ -r	&&
+git add . && 
+git commit -m "mynew" &&
+git push origin master &&
+git config --list
+*********************************************************************************************************
+*********************************************************************************************************
+
+
+
+
+
+
+
+编译命令*************************************************************************************************************
+********************************************************************************************************************
+
+nasm -f elf64 your_file.asm -o your_file.o    		 nasm
+
+ld your_file.o -o your_program
+
+
+as your_file.asm -o your_file.o    					 gas 
+
+ld -m elf_x86_64 yourfile.o -o your_program			 
+
+as --32 test.s -o test.o       						32位汇编在64位系统编译as命令
+
+ld -m elf_i386 -dynamic-linker /lib/ld-linux.so.2 -o test -L/usr/lib32/ -lc test.o
+
+gcc -static Test.c -o Test_static   				gcc采用静态链接
+
+gcc  Test.c -o Test    								gcc默认采用动态链接
+
+cmake . -DCMAKE_VERBOSE_MSKRHILR=ON
+
+objdump -ds				反汇编
+
+gcc sdl_demo.c -o sdl_demo -lSDL2
+
+gcc sdl_demo.c -o sdl_demo -lSDL2  -lSDL2_image
+
+制作动态库
+gcc *.c -c -fPIC 
+gcc -shared -o libmyku.so *.o
+sudo mv libmyku.so /lib
+
+
+ldd a.out 查看依赖的动态库
+
+nm 二进制文件
+
+ar -r 制作静态库
+
+echo$LD._LIBRARY_PATH
+
+**************************************************************************************************************
+****************************************************************************************************************
+
+
+
+
+关于nasm汇编*******************************************************************************************************
+*******************************************************************************************************************
+section .data
+	text db"hello,world!",10
+	
+section .text
+	global_start
+	
+_start:
+	mov rax, 1
+	mov rdi, 1
+	mov rsi, text
+	mov rdx, 14
+	syscall
+	
+	mov rax, 60
+	mov rdi, 0
+	syscall
+	
+	
+nasm -f elf64 hello.asm -o hello.o
+ld hello. -o hello
+./hello 
+hello,world
+*******************************************************************************************************************
+*******************************************************************************************************************
+
+
+umask 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
