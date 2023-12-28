@@ -1,4 +1,3 @@
-
 [user]
 	name = lilongya-111
 	email = 1051532926@qq.com
@@ -43,51 +42,15 @@ git config --global user.name "lilongya-111"    &&
 git config --global user.email 	"1051532926@qq.com"  &&
 ssh-keygen -t rsa -C "1051532926@qq.com"  &&
 cd ~/.ssh/ &&
-cat id_rsa.pub
-#手动设置github    ssh key
+cat id_rsa.pub &&
 ssh -T git@github.com &&
 git remote rm origin &&
-git remote add origin git@github.com:lilongya-111/all.git &&
+git remote add origin git@github.com:lilongya-111/jianjie.git &&
 git init &&
-echo "Downloads/" >> .gitignore && 
-git rm --cached Downloads/ -r &&
-echo "Pictures/" >> .gitignore && 
-git rm --cached Pictures/ -r	&&
-echo "Videos/" >> .gitignore && 
-git rm --cached Videos/ -r	&&
-echo "Music/" >> .gitignore && 
-git rm --cached Music/ -r	&&
-echo ".local/" >> .gitignore && 
-git rm --cached .local/ -r	&&
-echo ".config/" >> .gitignore && 
-git rm --cached .config/ -r	&&
-echo ".sogouinput/" >> .gitignore && 
-git rm --cached .sogouinput/ -r	&&
-echo ".gitconfig/" >> .gitignore && 
-git rm --cached .gitconfig/ -r	&&
-echo ".viminfo/" >> .gitignore && 
-git rm --cached .viminfo/ -r	&&
-echo ".vscode/" >> .gitignore && 
-git rm --cached .vscode/ -r	&&
-echo "snap/" >> .gitignore && 
-git rm --cached snap/ -r	&&
-echo ".zcompdump" >> .gitignore && 
-git rm --cached .zcompdump -r	&&
-echo ".gitignore" >> .gitignore && 
-git rm --cached .gitignore -r	&&
-echo ".dbus" >> .gitignore && 
-git rm --cached .dbus -r	&&
-echo ".ssh/" >> .gitignore && 
-git rm --cached .ssh/ -r	&&
-git add . && 
-git commit -m "mynew" &&
-git push origin master &&
-git config --list
-*********************************************************************************************************
-*********************************************************************************************************
-
-
-
+git branch -m jianjie
+git pull  origin jianjie
+*************************************************************************************
+***************************************************************************************
 
 
 
@@ -165,6 +128,8 @@ ld hello. -o hello
 ./hello 
 hello,world
 *******************************************************************************************************************
+1989qpmz  git
+1989@llyA aws
 *******************************************************************************************************************
 
 
@@ -184,9 +149,7 @@ umask
 
 
 
-
  
-
 
 
 
