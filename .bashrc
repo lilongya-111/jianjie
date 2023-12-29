@@ -89,6 +89,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias cdv='cd ~/Videos'
     alias cdp='cd ~/Pictures'
     alias cdm='cd ~/Music'
+    alias c='clear'
 fi
 
 # colored GCC warnings and errors
