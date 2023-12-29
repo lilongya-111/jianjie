@@ -1,6 +1,6 @@
 sudo apt update -y &&
 sudo apt upgrade -y &&
-sudo apt dist-upgrade -y    &&
+#sudo apt dist-upgrade -y    &&
 sudo apt clean && 
 sudo apt autoclean &&
 sudo apt install fcitx -y &&
@@ -29,12 +29,24 @@ sudo apt install python3-bs4 -y&&
 sudo apt install python3-lxml -y  &&
 sudo apt install blender vim    &&
 sudo apt install shotcut    &&
-
-
+wget https://dldir1.qq.com/qqfile/qq/QQNT/5edc39d1/linuxqq_3.2.3-19689_amd64.deb &&
+sudo dpkg -i linuxqq_3.2.3-19689_amd64.deb &&
+wget https://github.com/ChestnutHeng/Wudao-dict/archive/master.zip &&
+cd ./wudao-dict/wudao-dict &&
+sudo bash setup.sh  &&
 git config --global user.name "lilongya-111"    &&						
 git config --global user.email 	"1051532926@qq.com"  &&
-git push --set-upstream origin jianjie
 git  init  &&
+ssh-keygen -t rsa -C "1051532926@qq.com"  &&
+cd ~/.ssh/ &&
+cat id_rsa.pub &&
+git remote add origin git@github.com:lilongya-111/jianjie.git &&
+git init &&
+git branch -m jianjie   &&
+git pull  origin jianjie    &&
+git add .   &&
+git commit -m "jianjie" &&
+git push --set-upstream origin jianjie
 #git  clone git@github.com:lilongya-111/jianjie.git  &&
 # cd ~/Downloads  &&
 # tar -zxvf bochs-2.6.8.tar.gz  &&
@@ -56,9 +68,6 @@ git  init  &&
 # clear &&
 
 #git clone https://github.com/chestnutheng/wudao-dict &&
-wget https://github.com/ChestnutHeng/Wudao-dict/archive/master.zip &&
-#cd ./wudao-dict/wudao-dict &&
-#sudo bash setup.sh
-#wget https://dldir1.qq.com/qqfile/qq/QQNT/5edc39d1/linuxqq_3.2.3-19689_amd64.deb 
+
 #搜狗输入法下载地址
 #https://shurufa.sogou.com/linux
