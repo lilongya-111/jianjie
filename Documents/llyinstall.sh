@@ -24,9 +24,13 @@ sudo apt install sogoupinyin/now    &&
 sudo apt install -y libclang-dev universal-ctags nodejs clang-format clangd &&
 sudo apt install madplay ffmpeg &&
 sudo apt install python3 -y &&
-sudo apt install python3-pip &&
-sudo apt install python3-bs4 &&
-sudo apt install python3-lxml   &&
+sudo apt install python3-pip -y&&
+sudo apt install python3-bs4 -y&&
+sudo apt install python3-lxml -y  &&
+sudo apt install blender vim    &&
+sudo apt install shotcut    &&
+
+
 git config --global user.name "lilongya-111"    &&						
 git config --global user.email 	"1051532926@qq.com"  &&
 git push --set-upstream origin jianjie
