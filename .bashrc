@@ -84,6 +84,11 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
     alias blender='/home/lly/Downloads/blender-4.0.2-linux-x64/blender'
     alias cdd='cd ~/Documents'
+    alias cdh='cd ~'
+    alias cde='cd ~/Downloads'
+    alias cdv='cd ~/Videos'
+    alias cdp='cd ~/Pictures'
+    alias cdm='cd ~/Music'
 fi
 
 # colored GCC warnings and errors
