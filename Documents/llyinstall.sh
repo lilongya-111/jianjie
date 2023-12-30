@@ -27,8 +27,15 @@ sudo apt install python3 -y &&
 sudo apt install python3-pip -y&&
 sudo apt install python3-bs4 -y&&
 sudo apt install python3-lxml -y  &&
-sudo apt install blender vim    &&
-sudo apt install shotcut    &&
+sudo apt install blender vim   -y &&
+sudo apt install shotcut  -y  &&
+sudo apt install mysql-server   -y&&
+sudo mysql_secure_installation &&
+service mysql status    &&
+sudo mysql -u root -p   &&
+show schemas &&
+
+
 wget https://dldir1.qq.com/qqfile/qq/QQNT/5edc39d1/linuxqq_3.2.3-19689_amd64.deb &&
 sudo dpkg -i linuxqq_3.2.3-19689_amd64.deb &&
 wget https://github.com/ChestnutHeng/Wudao-dict/archive/master.zip &&

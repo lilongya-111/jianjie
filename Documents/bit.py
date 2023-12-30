@@ -13,3 +13,6 @@ new2_img = cv.bitwise_and(img,img2)
 cv.imshow('new_img',new_img)
 cv.imshow('new2_img',new2_img)
 cv.waitKey(0)
+
+
+
