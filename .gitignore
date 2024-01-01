@@ -34,5 +34,14 @@ hello.c
 .zcompdump
 .bashrc
 new.c
-
-
+.Xauthority
+.nv/
+.putty/
+.vnc/
+.xsession
+.xorgxrdb.10.1og
+.xorgxrdb.10.1og.old
+.xsession-errors
+.xorgxrdp.10.1og
+.xorgxrdp.10.1og.old
+.xorgxrdp.10.1og.old
